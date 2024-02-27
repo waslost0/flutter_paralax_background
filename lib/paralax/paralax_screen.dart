@@ -32,4 +32,10 @@ class _ParallaxScreenState extends State<ParallaxScreen> {
       ),
     );
   }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 }
